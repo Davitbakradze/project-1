@@ -77,6 +77,7 @@ h3{
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-bottom: 8px;
 }
 
 .nav-item{
@@ -299,6 +300,112 @@ h3{
   cursor: pointer;
 }
 
+.second-section{
+  margin-top: 20px;
+}
+
+.second-section-name{
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.second-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 424px 424px;
+  gap: 1%;
+  margin-top: 36px;
+}
+
+.second-grid-box{
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  background: #F8F8F8;
+  box-shadow: 0px 4px 18px 0px rgba(194, 194, 194, 0.30);
+}
+
+.photo-box{
+  position: relative;
+  max-width: 97%;
+  height: 202px;
+  margin: 16px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat, #B0B0B0;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.vip-box{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 30px;
+  border-radius: 15px;
+  background: #29B24E;
+  top: 18px;
+  left: 23px;
+}
+
+.vip-white-span{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bookmark-box{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFF;
+  filter: drop-shadow(-2px 4px 20px rgba(109, 109, 109, 0.25));
+  top: 182px;
+  left:85%;
+}
+
+.text-price-box{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.border-box{
+  border-bottom: rgba(207, 234, 214, 1) 1px solid;
+}
+
+.price-box{
+  margin-top: 15px;
+  margin-bottom: 16px;
+  text-align: right;
+}
+
+.house-rooms{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
 @media (max-width:1024px) {
   .navigation{
     gap: 28px;
@@ -335,6 +442,11 @@ h3{
   .p-box{
     font-size: 14px;
   }
+
+  .second-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:424px 424px 424px 424px ;
+  }
 }
 
 @media (max-width:375px) {
@@ -359,8 +471,13 @@ h3{
   .grid-box-left{
     order: 2;
   }
-  
+
   .main-heading-form{
     top: 32px;
+  }
+
+  .second-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 424px);
   }
 }
