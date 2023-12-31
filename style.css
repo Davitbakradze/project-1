@@ -410,7 +410,7 @@ h3{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 179px;
+  height: auto;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   background: #29B24E;
@@ -569,5 +569,26 @@ h3{
   .second-grid{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 424px);
+  }
+
+  .footer{
+    margin-top: 270px;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .footer-grid{
+    grid-template-columns: repeat(2, 1fr);
+    height: 236px;
+  }
+
+  .mail-box{
+    display: none;
+  }
+
+  .footer-nav-box{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
   }
 }
