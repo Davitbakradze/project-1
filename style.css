@@ -504,6 +504,15 @@ h3{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:424px 424px 424px 424px ;
   }
+
+  .mail-box{
+    display: none;
+  }
+
+  .footer-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+  }
 }
 
 @media (max-width:375px) {
@@ -537,6 +546,7 @@ h3{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 424px);
   }
+
 }
 
 @media (max-width:425px) {
