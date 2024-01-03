@@ -61,6 +61,16 @@ h1{
   line-height: normal;
 }
 
+h2{
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.9;
+}
+
 p{
   color: rgba(0, 0, 0, 0.80);
   font-family: Poppins;
@@ -68,6 +78,16 @@ p{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.sell-p{
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 164.286% */
+  opacity: 0.8;
 }
 
 h3{
@@ -153,12 +173,26 @@ h3{
   margin-top: 41px;
 }
 
+.sell-main-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+  margin-top: 41px;
+}
+
 .grid-box-left{
   padding-top: 32px;
   padding-bottom: 38px;
   border-radius: 24px;
   background: #F8F8F8;
   box-shadow: 0px 4px 25px 0px rgba(194, 194, 194, 0.31);
+}
+
+.sell-grid-right-box{
+  border-radius: 24px;
+  background: #F8F8F8;
+  box-shadow: 0px 4px 18px 0px rgba(194, 194, 194, 0.30);
+  padding-top: 32px;
 }
 
 .left-box{
@@ -467,6 +501,169 @@ h3{
   display: none;
 }
 
+.sell-grid-right-box-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sell-vip-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 30px;
+  border-radius: 15px;
+  background: #29B24E;
+}
+
+.view-box{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sell-gray-span{
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px; /* 191.667% */
+  opacity: 0.6;
+}
+
+.sell-heading-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
+  margin-bottom: 32px;
+  gap: 12px;
+}
+
+.sell-room-description{
+  height: 55px;
+  border-top:  #ECECEC 1px solid;
+  border-bottom: #ECECEC 1px solid;
+  margin: 40px 0px 24px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.specifications-room{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sell-room-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.sell-room-grid-first{
+  display: grid;
+  grid-template-rows: 25% 25% 25%;
+  gap: 16px;
+}
+
+.sell-property-box{
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.sell-room-grid-second{
+  display: grid;
+  gap: 16px;
+}
+
+.sell-room-room-grid-third{
+  display: grid;
+  grid-template-rows: 25% 25% 25%;
+  gap: 16px;
+}
+
+.facility-items{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sell-grid-left-box{
+  border-radius: 20px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat, #B0B0B0;
+  box-shadow: 0px 4px 18px 0px rgba(194, 194, 194, 0.30);
+}
+
+.sell-bottom-box{
+  border-top: 1px solid  #ECECEC;
+  padding-top:27px;
+  padding-bottom: 26px;
+}
+
+.sell-bottom-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sell-price-box{
+  display: flex;
+  align-items: baseline;
+}
+
+.contact-buttons{
+  display: flex;
+  gap: 16px;
+}
+
+.messege-box{
+  border-radius: 12px;
+  border: 1px solid #29B24E;
+  padding: 13px 26px;
+  transition: all 0.3s;
+  transition-delay: 0.2s;
+}
+
+.messege-box:hover{
+  background-color: #29B24E;
+}
+
+.green-span{
+  transition: all 0.3s;
+  transition-delay: 0.2s;
+}
+
+.green-span:hover{
+  color: #FFF;
+}
+
+.call-box{
+  padding: 13px 26px;
+  border-radius: 12px;
+  background: #29B24E;
+  transition: all 0.3s;
+  transition-delay: 0.2s;
+}
+
+.call-box:hover{
+  opacity: 0.8;
+}
+
+.sell-price{
+  color: #29B24E;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+
 @media (max-width:1024px) {
   .navigation{
     gap: 28px;
@@ -516,6 +713,10 @@ h3{
   .footer-grid{
     grid-template-columns: repeat(2, 1fr);
     gap: 5%;
+  }
+
+  .sell-main-grid{
+    grid-template-columns: 1fr;
   }
 }
 
@@ -671,5 +872,65 @@ h3{
     font-weight: 500;
     line-height: normal;
     opacity: 0.9;
+  }
+
+  .sell-room-grid{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .sell-property-box{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .sell-room-grid-second{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .facility-items{
+    align-items: flex-end;
+  }
+
+  .sell-bottom-box{
+    padding-top: 16px;
+    padding-bottom: 45px;
+  }
+
+  .sell-bottom-container{
+    flex-direction: column;
+  }
+
+  .sell-price-box{
+    width: 100%;
+  }
+
+  .contact-buttons{
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    
+  }
+
+  .sell-box{
+    margin-left: 31px;
+    margin-bottom: 41px;
+  }
+  
+
+  .messege-box{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    order: 2;
+  }
+
+  .call-box{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    order: 1;
   }
 }
