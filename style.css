@@ -350,7 +350,7 @@ h3{
 .second-grid{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 424px 424px;
+  grid-template-rows: auto;
   gap: 1%;
   margin-top: 36px;
 }
@@ -438,6 +438,7 @@ h3{
   max-width: 90%;
   margin: 0 auto;
   margin-top: 12px;
+  margin-bottom: 15px;
 }
 
 .footer{
@@ -703,7 +704,7 @@ h3{
 
   .second-grid{
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:424px 424px 424px 424px ;
+    grid-template-rows:424px 424px;
   }
 
   .mail-box{
@@ -749,7 +750,7 @@ h3{
 
   .second-grid{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 424px);
+    grid-template-rows: repeat(auto, 424px);
   }
 
 }
@@ -783,7 +784,7 @@ h3{
 
   .second-grid{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 424px);
+    grid-template-rows: repeat(auto, 424px);
   }
 
   .footer{
