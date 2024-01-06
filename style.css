@@ -160,6 +160,13 @@ h3{
   justify-content: center;
   Width: 156px;
   Height: 47px;
+  transition: all 0.3s;
+  transition-delay: 0.2s;
+}
+
+
+.button-box:hover{
+  opacity: 0.8;
 }
 
 .search-icon{
