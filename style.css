@@ -322,6 +322,10 @@ h3{
   outline: none;
   background-color: rgba(248, 248, 248, 0.80);
   border-radius: 10px;
+  padding-left: 24px;
+  font-size: 14px;
+  font-family: Poppins;
+  opacity: 0.5;
 }
 
 .submit{
