@@ -175,7 +175,7 @@ h3{
 
 .main-grid{
   display: grid;
-  grid-template-columns: 29% 69%;
+  grid-template-columns: 29% 70%;
   gap: 1%;
   margin-top: 41px;
 }
