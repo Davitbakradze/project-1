@@ -947,3 +947,9 @@ h3{
     order: 1;
   }
 }
+
+@media (max-width:768px) {
+  .main-grid{
+    grid-template-columns: 50% 49%;
+  }
+}
