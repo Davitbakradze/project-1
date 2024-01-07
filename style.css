@@ -729,6 +729,7 @@ h3{
 
   .sell-main-grid{
     grid-template-columns: 1fr;
+    margin-bottom: 50px;
   }
 }
 
